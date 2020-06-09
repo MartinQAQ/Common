@@ -1,0 +1,64 @@
+<resources>
+    <string name="test_hint">测试</string>
+    <string name="empty_network_error">网络异常，点击重试</string>
+    <string name="empty_no_data">暂无数据，点击重试</string>
+    <string name="load_end">没有更多数据</string>
+    <string name="loading">加载中…</string>
+    <string name="load_failed">加载失败，点击重试</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确认</string>
+    <string name="versionchecklib_download_apkname">%s.apk</string>
+    <string name="net_work_error">网络请求失败，请检查网络后重试</string>
+    <string name="no_more_data">没有更多数据了</string>
+    
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>spring View begin>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <string name="loosen_and_load_more">松开载入更多</string>
+    <string name="view_more">查看更多</string>
+    <string name="minutes_ago">分钟前</string>
+    <string name="hours_before">小时前</string>
+    <string name="days_ago">天前</string>
+    <string name="just_now">刚刚</string>
+    <string name="yesterday">昨天</string>
+    <string name="loosen_the_refresh">松开刷新</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="is_refreshing">正在刷新</string>
+    <string name="load_more">加载更多</string>
+    <string name="loading_more">正在加载更多</string>
+    <string name="last_update_at">上次更新时间：</string>
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>spring View end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Bug end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <string name="customactivityoncrash_error_activity_error_occurred_explanation">发生意外错误。\n抱歉，给您带来不便。</string>
+    <string name="customactivityoncrash_error_activity_restart_app">重新启动</string>
+    <string name="customactivityoncrash_error_activity_close_app">关闭程序</string>
+    <string name="customactivityoncrash_error_activity_error_details">错误日志</string>
+    <string name="customactivityoncrash_error_activity_error_details_title">错误详情</string>
+    <string name="customactivityoncrash_error_activity_error_details_close">关闭</string>
+    <string name="customactivityoncrash_error_activity_error_details_copy">复制日志</string>
+    <string name="customactivityoncrash_error_activity_error_details_copied">复制日志</string>
+    <string name="customactivityoncrash_error_activity_error_details_clipboard_label">错误信息</string>
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Bug end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <string name="title">标题</string>
+    <string name="contents">请输入内容</string>
+    <string name="confirm">确认</string>
+    <string name="prompt">提示</string>
+    <string name="input_meter_hint">请输入平方米</string>
+    <string name="net_error_hint">网络连接不可用，请检查网络设置！</string>
+    <string name="layout_id_error_activity">\n\tLayout id error \n\t请设置@ContentView \n\t 示例: @ContentView(R.layout.main_activity)</string>
+    <string name="layout_id_error_fragment">\n\tLayout id error \n\t请设置@ContentView \n\t 示例: @ContentView(R.layout.main_fragment)</string>
+    <string name="layout_id_error_adapter">\n\tLayout id error \n\t请设置@ContentView \n\t 示例: @ContentView(R.layout.main_item)</string>
+    <string name="content_view_empty_activity">\n\t当前Activity请设置@ContentView \n\t 示例: @ContentView(R.layout.main_activity)</string>
+    <string name="content_view_empty_fragment">\n\t当前Fragment请设置@ContentView \n\t 示例: @ContentView(R.layout.main_fragment)</string>
+    <string name="content_view_empty_adapter">\n\t当前Adapter请设置@ContentView \n\t 示例: @ContentView(R.layout.main_item)</string>
+    <string name="dialog_layout_id_error">\n\tLayout id error \n\t请设置@ContentView \n\t 示例: @ContentView(R.layout.main_dialog)</string>
+    <string name="dialog_content_view_empty">\n\t当前Dialog请设置@ContentView \n\t 示例: @ContentView(R.layout.main_dialog)</string>
+    <string name="dialog_gravity_error">"@DialogGravity(Gravity.BOTTOM)目前只支持 Gravity.TOP\nGravity.BOTTOM\nGravity.LEFT\nGravity.RIGHT\nGravity.CENTER</string>
+    <!-- 共享过度动画 -->
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+
+    <string name="brvah_loading" >正在加载中...</string>
+    <string name="brvah_load_failed" >加载失败，请点我重试</string>
+    <string name="brvah_load_end">没有更多数据</string>
+</resources>
