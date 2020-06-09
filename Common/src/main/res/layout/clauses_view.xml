@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/clauses_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:id="@id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_gray"/>
+
+    <RelativeLayout
+        android:id="@id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80">
+
+        <ImageView
+            android:id="@+id/draw_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/draw_left"
+            android:layout_toRightOf="@id/draw_left"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@id/remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toStartOf="@id/draw_right"
+            android:layout_toLeftOf="@id/draw_right"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp60"
+            android:paddingLeft="@dimen/dp60"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:id="@id/draw_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/arrow"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_gray"/>
+</LinearLayout>
