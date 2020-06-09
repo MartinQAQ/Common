@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android动态setId，避免id重复,主要用于代码new布局的点击事件控制 -->
+    <item name="actionbar_title_click" type="id"></item>
+    <item name="actionbar_left_img_click" type="id"></item>
+    <item name="actionbar_left_text_click" type="id"></item>
+    <item name="actionbar_right_img_click" type="id"></item>
+    <item name="actionbar_right_text_click" type="id"></item>
+    <item name="actionbar_left_img_click2" type="id"></item>
+    <item name="actionbar_left_text_click2" type="id"></item>
+    <item name="actionbar_right_img_click2" type="id"></item>
+    <item name="actionbar_right_img_click3" type="id"></item>
+    <item name="actionbar_right_text_click2" type="id"></item>
+    <item name="actionbar_right_count" type="id"></item>
+    <!-- 所有fragment -->
+    <item name="fragment_layout" type="id"></item>
+    <!-- 状态栏 -->
+    <item name="statusbarutil_fake_status_bar_view" type="id" />
+    <item name="statusbarutil_translucent_view" type="id" />
+
+    <!--默认TAG使用ID-->
+    <item name="default_tag" type="id" />
+
+
+
+    <!--  ClausesView  -->
+    <item type="id" name="top_line"/>
+    <item type="id" name="draw_left"/>
+    <item type="id" name="title"/>
+    <item type="id" name="remark"/>
+    <item type="id" name="draw_right"/>
+    <item type="id" name="bottom_line"/>
+    <item type="id" name="clauses_view"/>
+    <item type="id" name="content_view"/>
+
+
+    <item name="BaseQuickAdapter_viewholder_support" type="id"/>
+    <item name="BaseQuickAdapter_swiping_support" type="id"/>
+    <item name="BaseQuickAdapter_dragging_support" type="id"/>
+    <item name="BaseQuickAdapter_databinding_support" type="id"/>
+</resources>
