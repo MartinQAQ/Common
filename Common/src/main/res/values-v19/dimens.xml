@@ -1,0 +1,8 @@
+<resources>
+	<dimen name="status_bar_height">25dp</dimen>
+	<dimen name="arrow_top">15dp</dimen>
+	<dimen name="head_height">265dp</dimen>
+
+	<!--首页导航 高度-->
+	<dimen name="title_height">73dp</dimen>
+</resources>
