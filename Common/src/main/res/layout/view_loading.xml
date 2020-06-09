@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/base_ll"
+              style="@style/bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/loading_img"
+        app:srcCompat="@mipmap/status_img"/>
+
+    <TextView
+        android:id="@+id/load_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/loading"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp"/>
+</LinearLayout>
