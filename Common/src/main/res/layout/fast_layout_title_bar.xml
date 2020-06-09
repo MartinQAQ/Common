@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aries.ui.view.title.TitleBarView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TitleBarView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_title_height"
+    android:background="@color/colorTitleBackground"
+    TitleBarView:title_actionTextColor="@color/colorTitleText"
+    TitleBarView:title_dividerBackground="@color/colorTitleDivider"
+    TitleBarView:title_dividerHeight="@dimen/dp01"
+    TitleBarView:title_leftTextColor="@color/colorTitleText"
+    TitleBarView:title_rightTextColor="@color/colorTitleText"
+    TitleBarView:title_titleMainTextColor="@color/colorTitleText"
+    TitleBarView:title_titleMainTextMarquee="true"
+    TitleBarView:title_titleSubTextColor="@color/colorTitleText"
+    TitleBarView:title_titleMainTextSize="@dimen/sp18"/>
+
+
+
