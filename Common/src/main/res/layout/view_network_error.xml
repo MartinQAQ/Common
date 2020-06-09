@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/error_ll"
+              style="@style/bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/error_img"
+        style="@style/loading_img"
+        app:srcCompat="@mipmap/status_img"/>
+
+    <TextView
+        android:id="@+id/error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/empty_network_error"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp"/>
+</LinearLayout>
