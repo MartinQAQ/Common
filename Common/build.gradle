@@ -1,0 +1,189 @@
+apply plugin: 'com.android.library'
+// must be applied after your artifact generating plugin (eg. java / com.android.library)
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'martinqaq' //bintray账户下某个组织id
+    groupId = 'com.z_martin' //maven仓库下库的包名，一般为模块包名
+    artifactId = 'common' //项目名称
+    publishVersion = '1.0.4' //版本号
+    desc = '' //项目介绍，可以不写
+    website = '' //项目主页，可以不写
+}
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        def BOOLEAN = "boolean"
+        def TRUE = "true"
+        def FALSE = "false"
+        def IS_SHOW_LOG = "IS_SHOW_LOG"
+
+        debug {
+            buildConfigField BOOLEAN, IS_SHOW_LOG, TRUE
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled false
+            // 设置支持multidex
+//            multiDexEnabled true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+        release {
+            buildConfigField BOOLEAN, IS_SHOW_LOG, FALSE
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            // 设置支持multidex
+//            multiDexEnabled true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    /** constraint-layout */
+    api 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    /** Android X */
+    api 'com.google.android.material:material:1.3.0-alpha01'
+    api 'androidx.cardview:cardview:1.0.0'
+    api 'androidx.recyclerview:recyclerview:1.1.0'
+    api 'androidx.core:core-ktx:1.3.0'
+    api 'androidx.appcompat:appcompat:1.1.0'
+
+    /** Retrofit https://github.com/square/retrofit */
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    /** okhttp https://github.com/square/okhttp */
+    api 'com.squareup.okhttp3:logging-interceptor:4.7.2'
+    api 'com.squareup.okhttp3:okhttp:4.7.2'
+
+    /** rxLifecycle https://github.com/trello/RxLifecycle */
+    api 'com.trello.rxlifecycle2:rxlifecycle:2.2.2'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
+
+    /** RxJava  https://github.com/ReactiveX/RxJava */
+    api 'io.reactivex.rxjava2:rxjava:2.2.19'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'com.jakewharton.rxbinding3:rxbinding:3.1.0'
+
+    /** Glide  https://github.com/bumptech/glide */
+    api 'com.github.bumptech.glide:glide:4.11.0'
+
+
+    /** 绑定控件  https://github.com/JakeWharton/butterknife */
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+
+    /** swipeback https://github.com/Simon-Leeeeeeeee/SLWidget/tree/master/swipeback  */
+    api 'me.yokeyword:fragmentationx:1.0.2'
+    api 'me.yokeyword:fragmentationx-swipeback:1.0.2'
+
+    /** BaseRecyclerViewAdapterHelper  https://github.com/CymChad/BaseRecyclerViewAdapterHelper */
+//    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
+
+//    /** recyclerview animators */
+//    api 'jp.wasabeef:recyclerview-animators:3.x.x'
+
+    /** 常用UI控件(TitleBarView、RadiusView等)  https://github.com/AriesHoo/UIWidget */
+    api 'com.github.AriesHoo.UIWidget:widget-core:3.2.24'
+
+    /** 快速Tab库 */
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    /** fastJson https://github.com/alibaba/fastjson */
+    api 'com.alibaba:fastjson:1.2.70'
+
+    /**  EventBus https://github.com/greenrobot/EventBus */
+    api 'org.greenrobot:eventbus:3.2.0'
+
+    /** 权限 https://github.com/tbruyelle/RxPermissions */
+    api 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    /** 65536 */
+    api 'com.android.support:multidex:1.0.3'
+
+    /** 友盟统计 */
+//    api 'com.umeng.analytics:analytics:6.1.4'
+
+    /** 版本检测升级（更新）库 */
+//    api 'com.allenliu.versionchecklib:library:2.0.8'
+
+    /** 时间选择器 */
+//    api 'com.contrarywind:Android-PickerView:4.1.6'
+
+    /** 图片选择器 */
+//    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+
+    /** SwitchButton  */
+//    api 'com.kyleduo.switchbutton:library:2.0.0'
+//
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
+    /** 压缩图片 */
+    implementation 'top.zibin:Luban:1.1.8'
+
+    /** SpringView  https://github.com/liaoinstan/SpringView */
+    api 'com.liaoinstan.springview:library:1.7.0'
+
+    /** viselog https://github.com/xiaoyaoyou1212/ViseLog */
+    api 'com.vise.xiaoyaoyou:viselog:1.1.2'
+
+    /** swipeback https://github.com/Simon-Leeeeeeeee/SLWidget/tree/master/swipeback  */
+//    api 'cn.simonlee.widget:swipeback:1.0.15'
+
+    /** 骨架屏 */
+    api 'com.ethanhua:skeleton:1.1.2'
+    api 'io.supercharge:shimmerlayout:2.1.0'
+
+    /** 字体对齐的textview https://github.com/androiddevelop/AlignTextView */
+//    api 'me.codeboy.android:align-text-view:2.3.2'
+
+    /** 图片选择器 */
+    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.1'
+
+    /** 沉浸式状态栏和沉浸式导航栏管理  https://github.com/gyf-dev/ImmersionBar */
+    api 'com.gyf.immersionbar:immersionbar:3.0.0'
+}
