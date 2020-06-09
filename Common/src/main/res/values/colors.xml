@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- basic -->
+    <!-- 主色调 -->
+    <color name="colorPrimary">#ffeeeeee</color>
+    <!-- 主题相关颜色 -->
+    <color name="window_background_light">#ffeeeeee</color>
+    <color name="window_background_dark">#ff303030</color>
+    <color name="text_color_light">#b3ffffff</color>
+    <color name="text_color_dark">#de000000</color>
+    <color name="list_divider_light">#ffe0e0e0</color>
+    <color name="list_divider_dark">#ff666666</color>
+    <color name="selectable_item_background_general_light_normal">@android:color/white</color>
+    <color name="selectable_item_background_general_light_pressed">#ffeeeeee</color>
+    <color name="selectable_item_background_general_light_accent">#ffcccccc</color>
+    <color name="selectable_item_background_general_dark_normal">#ff3c3c3c</color>
+    <color name="selectable_item_background_general_dark_pressed">#ff444444</color>
+    <color name="selectable_item_background_general_dark_accent">#ff666666</color>
+    
+    
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 自定义loading-dialog背景色 -->
+    <color name="loading_bgs">#00000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFF</color>
+    <color name="bg">#FAFAFA</color>
+    <color name="txt_color">#C9C9C9</color>
+    <color name="colorRateRed">#FB5B81</color>
+
+    <!--TitleBarView背景色-->
+    <color name="colorTitleBackground">#FFFFFF</color>
+    <!--TitleBarView 文字颜色-->
+    <color name="colorTitleText">#393939</color>
+    <!--TitleBarView 下划线颜色-->
+    <color name="colorTitleDivider">#DCDCDC</color>
+
+·   
+    <!-- action_sheet -->`
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="black">#000</color>
+    <color name="text_gray">#9B9B9B</color>
+    <color name="blue_txt">#007AFF</color>
+
+    <!-- 系统颜色 -->
+    <color name="sys">#0F0F6C</color>
+    <color name="sys2">#4A90E2</color>
+    <color name="sys_bg">#F9F9F9</color>
+
+    <!--dialog 取消颜色-->
+    <color name="dialog_cancel">#7e7e7e</color>
+    <color name="dialog_gray_bg">#dddddd</color>
+    <color name="dialog_gray">#808080</color>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="txt_black">#000000</color>
+</resources>
