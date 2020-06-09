@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:focusable="true"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/error_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp48"
+        android:background="#EFEDEE"
+        android:gravity="center"
+        android:text="@string/net_error_hint"
+        android:textColor="#F96F3C"
+        android:textSize="@dimen/sp16"/>
+</LinearLayout>
